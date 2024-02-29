@@ -8,8 +8,13 @@ import * as $about from "./routes/about.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
 import * as $api_random_uuid from "./routes/api/random-uuid.ts";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
+import * as $greet_layout from "./routes/greet/_layout.tsx";
+import * as $greet_me from "./routes/greet/me.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $my_special_route from "./routes/my-special-route.tsx";
 import * as $search from "./routes/search.tsx";
+import * as $subscribe from "./routes/subscribe.tsx";
+import * as $upload from "./routes/upload.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
@@ -21,8 +26,13 @@ const manifest = {
     "./routes/api/joke.ts": $api_joke,
     "./routes/api/random-uuid.ts": $api_random_uuid,
     "./routes/greet/[name].tsx": $greet_name_,
+    "./routes/greet/_layout.tsx": $greet_layout,
+    "./routes/greet/me.tsx": $greet_me,
     "./routes/index.tsx": $index,
+    "./routes/my-special-route.tsx": $my_special_route,
     "./routes/search.tsx": $search,
+    "./routes/subscribe.tsx": $subscribe,
+    "./routes/upload.tsx": $upload,
   },
   islands: {
     "./islands/Counter.tsx": $Counter,
